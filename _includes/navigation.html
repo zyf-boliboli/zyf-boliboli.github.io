@@ -1,0 +1,42 @@
+<style>
+  .navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #313131;
+    padding: 10px;/*上下边距*/
+    padding-left: 50px;/*左侧边距*/
+  }
+
+  .navbar a {
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 15px;
+    position: relative;
+    background-color: transparent; /* 设置按钮背景为透明 */
+    font-size: 18px;
+  }
+
+  .navbar a:hover {
+    background-color: rgb(245, 174, 163);
+  }
+
+  .navbar a.selected {
+    color: rgb(255, 255, 255);
+  }
+
+  .logo {  
+    height: 50px; /* 设置logo的高度，根据需要调整 */  
+    width: auto; /* 保持logo的原始宽高比 */  
+    margin-right: 20px; /* 如果需要，给logo右侧添加一些空间，以便与导航链接分隔开 */  
+}
+</style>
+
+<div class="navbar"style="position: fixed; top: 0; width: 100%; z-index: 1000;">
+  <img src="https://img2.imgtp.com/2024/05/22/MJHyQHLO.png" alt="Logo" class="logo"> 
+  {% for item in site.data.navigation %}
+    <a href="{{ item.link }}" {% if page.url == item.link %}class="selected"{% endif %}>
+      {{ item.name }}
+    </a>
+  {% endfor %}
+</div>

@@ -1,0 +1,107 @@
+---
+layout: default
+title: News
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ page.title }}</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: '黑体', sans-serif;
+  }
+
+  .background-container {
+    background-image: url('https://bormiolirocco.com/upload/slideshow_hp/Barshine%20Web%20Banner_iq342ypl.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* 背景图全屏覆盖 */
+    height: 300px; /* 背景图片的高度 */
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: flex-end; /* 垂直底部对齐 */
+  }
+
+  .content-container {
+    background-color: rgba(0, 0, 0, 0.6); /* 添加半透明背景色 */
+    padding: 20px;
+    width: 80%; /* 内容宽度 */
+    max-width: 800px; /* 最大宽度 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+    margin: 20px auto 30px auto; /* 将内容容器下移一些，使其不与背景图片重叠 */
+  }
+
+  h1 {
+    font-size: 70px;
+    color: #FFFFFF;
+    text-align: left;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 36px;
+    color: #FFFFFF;
+    text-align: left;
+  }
+
+  p {
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: left;
+  }
+
+  .meta {
+    font-size: 14px;
+    color: #AAAAAA;
+  }
+
+  a {
+    color: #FFFFFF; /* 链接颜色改为白色 */
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 40px; /* 设置列表项之间的间距 */
+  }
+</style>
+</head>
+<body>
+
+<!-- 背景图片容器 -->
+<div class="background-container">
+  <h1>{{ page.title }}</h1>
+</div>
+
+<!-- 内容容器 -->
+<div class="content-container">
+  <ul>
+  {% for post in site.posts %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p class="meta">{{ post.date | date: "%B %d, %Y" }}</p>
+      {% if post.excerpt %}
+        <p>{{ post.excerpt }}</p>
+      {% else %}
+        <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+      {% endif %}
+      <p><a href="{{ post.url }}">Read more...</a></p>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+
+</body>
+</html>

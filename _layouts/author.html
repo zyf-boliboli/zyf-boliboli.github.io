@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<h1>{{ page.name }}</h1>
+<h2>{{ page.position }}</h2>
+
+{{ content }}
+
+<h2>Products</h2>
+<ul>
+  {% assign filtered_products = site.products | where: 'author', page.short_name %}
+  {% for product in filtered_products %}
+    <li><a href="{{ product.url }}">{{ product.title }}</a></li>
+  {% endfor %}
+</ul>

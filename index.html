@@ -1,0 +1,105 @@
+---
+layout: default
+title: Home
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+      background-image: #ffffff;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    .item {
+      width: 100%;  
+      height: 600px;  
+      position: absolute;  
+      top: 0; /* 定位到容器顶部 */  
+      left: 0; /* 定位到容器左侧 */  
+    }
+    .custom-container {   
+      width: 100%; /* 设置为父元素宽度的 */  
+      height: 400px; */ /* 例如，设置固定高度*/ 
+      opacity: 0.3;  
+      background-color: rgba(128, 128, 128,0.3);  
+      padding: 50px; /* 添加内边距 */  
+      margin-top: 0px;
+      /*border: 1px solid #ccc; 添加边框 */  
+    }
+    .float-right {
+      float: right;
+      margin-left: 80px; /* 为了让图片与文字之间有一些间隔 */
+    }
+    .float-left {
+      float: left;
+      margin-right: 80px; /* 为了让图片与文字之间有一些间隔 */
+    }
+    </style>
+</head>
+  <h1></h1>
+  <div id="myCarousel" class="carousel slide">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>   
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="/assets/image/2.png" alt="First slide">
+        </div>
+        <div class="item">
+            <img src="assets/image/1.png" alt="Second slide">
+        </div>
+        <div class="item">
+            <img src="https://cdn.builder.io/api/v1/image/assets%2F3304641bf47f475daf009975d2de66d8%2Fb815a2c5f29a4c279ed8e8bbc168c205?width=2000" alt="Third slide">
+        </div>
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="carousel-control left" href="#myCarousel" 
+       data-slide="prev"> <span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></a>
+    <a class="carousel-control right" href="#myCarousel" 
+       data-slide="next">&rsaquo;</a>
+</div>
+
+<div style="text-align: center;"> 
+  <br><br><br> 
+  <img src="assets/image/3.png" style="width: 40%;" alt="Description"> 
+  <br><br> 
+</div>
+
+<div class="custom-container">
+    <img class="float-right" src="assets/image/4.png" width='50%' > 
+    <br><br>
+    <h3>工厂已通过ISO9001、ISO14001、OHSAS18001等管理体系;并通过CSA、IPPMO等产品认证。在国内水杯行业中位居前列。 
+      拥有注塑-吹塑-焊接-真空-抛光-表面处理等高端技术和专业技能人才，拥有多项发明专利及实用新型等核心技术。 
+      公司采用出口和内销相结合的经营模式，经济实力增长强劲，秉承着“与时俱进、合作共赢”的经营思路，
+      不断营造新的经济增长点，把企业做实、做大、做强。</h3>
+</div>
+
+<div style="text-align: center;"> 
+  <br><br><br> 
+  <img src="assets/image/5.png" style="width: 30%;" alt="Description"> 
+  <br><br> 
+</div>
+
+<div class="custom-container">
+  <img class="float-left" src="https://ts1.cn.mm.bing.net/th/id/R-C.cd409d06c0a5a5347eed28a7b85f855e?rik=EqHUvN3apJBzow&riu=http%3a%2f%2fimgwcs3.soufunimg.com%2fopen%2f2019_10%2f01%2farticle%2f859543f3-ecde-4a4d-9dda-c12dd3273ba5.jpg&ehk=fjSYx5tV1zRy3brjnzIMagQADP1swQrMFqQmAzPQux4%3d&risl=&pid=ImgRaw&r=0" width='40%' > 
+  <br><br>
+  <h3>公司定期进行主动、持续的产品推陈出新，每年新品设计方案超过450件。
+  2018年度中国旅游商品大赛铜奖、2019年度中国的杯子创意设计大赛金奖、
+  2020年度新国货创新大赛金物奖（GGA）和2020年度中国旅游商品大赛铜奖等奖项,
+  产品设计能力较为突出。</h3>
+</div>
+
+</html>
+
+
+
