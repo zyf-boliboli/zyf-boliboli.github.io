@@ -10,7 +10,7 @@ title: About
     <title>About</title> 
     <style>
     body {
-      background-image: url('https://img2.imgtp.com/2024/05/23/PU4LmcgK.png');
+      background-image: url('assets/image/8.jpg');
       background-repeat: no-repeat;
       background-size: cover;
       background-attachment: fixed;
@@ -47,7 +47,7 @@ title: About
       width: 100%; /* 设置为父元素宽度的 */  
       height: 2000px; */ /* 例如，设置固定高度*/ 
       opacity: 0.9;  
-      background-color: rgba(255, 255, 255,0.9); /* 白色背景，不透明度 */  
+      background-color: rgba(255, 255, 255,0.5); /* 白色背景，不透明度 */  
       padding: 0px; /* 添加内边距 */  
       margin-top: 0px;
       /*border: 1px solid #ccc; 添加边框 */  
@@ -83,7 +83,7 @@ title: About
 </head>
 
 <div class="image-container">  
-  <img src="https://img2.imgtp.com/2024/05/23/xVu5PsGp.png" alt="Your Image">  
+  <img src="assets/image/image.png" alt="Your Image">  
 </div>
 
 <div class="custom-container">

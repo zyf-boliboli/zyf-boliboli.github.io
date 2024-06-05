@@ -10,14 +10,13 @@ title: Contact
   <title>联系我们</title>
   <style>
     body {
-      background-image: url('https://img2.imgtp.com/2024/05/16/wQGOIc3P.jpg');
+      background-image: url('assets/image/image7.png');
       background-repeat: no-repeat;
-      background-size: contain;
-      background-attachment: fixed;
+      background-size: cover;
     }
     h1 {
       font-family: '宋体', sans-serif;
-      font-size: 70px;
+      font-size: 80px;
       color: #FFFFFF;
       text-align: center;
       margin-top: 160px; /* 将距离顶部的距离设置为160px */
